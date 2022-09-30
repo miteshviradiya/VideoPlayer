@@ -1,0 +1,101 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+
+        <!--    <ImageButton-->
+        <!--        android:id="@id/exo_prev"-->
+        <!--        style="@style/ExoMediaButton.Previous"-->
+        <!--        app:tint="@color/black"-->
+        <!--        app:tintMode="src_in" />-->
+
+
+        <ImageButton
+            android:id="@id/exo_prev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_circle_with_border_button"
+            android:src="@drawable/previous"
+            style="@style/ExoMediaButton.Previous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <ImageButton android:id="@id/exo_play"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_with_border_button"
+                    android:src="@drawable/play"
+                    style="@style/ExoMediaButton.Play"/>
+
+                <ImageButton android:id="@id/exo_pause"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_circle_with_border_button"
+                    android:src="@drawable/pause"
+                    style="@style/ExoMediaButton.Pause"/>
+
+        </FrameLayout>
+
+<!--        <ImageButton-->
+<!--            android:id="@id/exo_play"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@drawable/bg_circle_with_border_button"-->
+<!--            android:src="@drawable/play"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.5"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@id/exo_pause"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@drawable/bg_circle_with_border_button"-->
+<!--            android:src="@drawable/pause"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.5"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.5"/>-->
+
+        <ImageButton
+            android:id="@id/exo_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_circle_with_border_button"
+            android:src="@drawable/next"
+            style="@style/ExoMediaButton.Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
